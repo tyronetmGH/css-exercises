@@ -19,14 +19,14 @@ body {
 .content {
   background: #e3f4ff;
   padding: 16px 8px;
-  margin-bottom: 8px;
+  margin: 8px 0;
 }
 
 .button-container {
   background: #e3f4ff;
   padding: 8px;
   /*I spent so long trying to do some box-sizing: border-box > 
-  width 400 > margin 0 auto shenanigans just for it to be text-alignnnn */
+  width: 400 > margin: 0 auto shenanigans just for it to be text-alignnnn */
   text-align: center;
 }
 
