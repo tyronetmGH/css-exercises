@@ -7,7 +7,8 @@ body {
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; 
+  commented out for flex:1 in .content*/
 }
 
 .header,
@@ -17,11 +18,7 @@ body {
   padding: 16px;
 }
 
-.left-links, 
-.right-links {
-  display: flex;
-  gap: 24px
-}
+
 
 .footer {
   background-color: #eeeeee
@@ -33,13 +30,14 @@ a {
   color: rgb(80, 80, 80)
 }
 
-li {
-  list-style: none;
-}
-
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+  /* moved list-style into here from li{} */
+  display: flex;
+  gap: 24px
+  /* moved here from .left-links,.right-links{} */
 }
 
 img {
@@ -47,10 +45,14 @@ img {
 }
 
 .content {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 16px;
+  /* added flex:1 and j-c:center to replace j-c:space-between in .content from solution
+  Is this better? seems like more work. */
 }
 
 button {
@@ -58,7 +60,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
-  padding: 8px;
+  padding: 8px 16px;
+  /* wider button padding */
 }
 
 input {
