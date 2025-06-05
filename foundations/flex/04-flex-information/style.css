@@ -1,6 +1,8 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
+/* Text align centered the body instead of .title & .item */
 
 img {
   width: 100px;
@@ -10,7 +12,6 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
-  text-align: center;
   margin-bottom: 32px;
 }
 
@@ -21,13 +22,9 @@ img {
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  text-align: center;
+  max-width: 200px;
 }
-
+/* Reduced bloated .item */
 
 /* do not edit this footer */
 .footer {
