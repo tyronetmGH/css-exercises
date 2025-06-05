@@ -47,7 +47,8 @@ ul {
   list-style-type: none;
 }
 
-/* SOLUTION */
+/* SOLUTION 
+Is this really better than my solution that doesnt add more containers??*/
 
 .header {
   display: flex;
