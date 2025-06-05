@@ -4,7 +4,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between;
+  Don't need space between for whole page, just non-header/footer content flex:1+ (already had this)*/
 }
 
 .header {
@@ -14,7 +15,9 @@ body {
   font-size: 32px;
   font-weight: 900;
   align-content: center;
-  padding-left: 16px;
+  padding-left: 16px; 
+  /* not sure why display flex is included in soln
+  since align-content: center works without it */
 }
 
 .footer {
@@ -40,6 +43,14 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Remember to set padding and margin to 0 for uls! */
+}
+
+li {
+  margin-bottom: 16px;
+  /* space between list items */
 }
 
 a {
@@ -50,10 +61,10 @@ a {
 
 .list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   padding: 48px;
-  gap: 24px
+  gap: 32px
+  /* increase gap by 8 and remove j-c center */
 }
 
 .card {
@@ -61,6 +72,8 @@ a {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
   padding: 16px;
-  min-width: 300px;
-  flex-basis: 0;
+  width: 300px; /* removed "min-" from width and
+  flex-basis: 0; 
+  together they do the same thing as regular width
+  */
 }
