@@ -37,7 +37,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto
+  flex-shrink: 0;
+  /* swapped flex:00auto to shrink:0 */
 }
 
 .header {
@@ -45,6 +46,8 @@ body {
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  /* align items shift header text a bit */
 }
 
 .close-button {
